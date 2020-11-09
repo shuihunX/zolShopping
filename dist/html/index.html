@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>政府采购_企业采购_办公设备采购_电脑办公采购_政企采购平台-中关村在线企业购</title>
     <script src="../js/jQuery-1.11.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
+    <script src="https://www.swiper.com.cn/package/swiper-bundle.min.js" async></script>
 
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js " async></script>
 </head>
 
 <body>
@@ -119,12 +123,82 @@
         </div>
         <!-- 轮播图 -->
         <div class="lunbotu">
-
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.zol.com/solution/">
+                            <img src="../image/banner6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
         <!-- 会员登录 -->
-        <div class="huiyuan_login"></div>
+        <div class="huiyuan_login">
+            <div class="login">
+                <div class="login_tab">
+                    会员登录
+                </div>
+
+                <div class="login_list">
+                    <input type="text" placeholder="手机号/邮箱/用户名">
+                    <input type="text" placeholder="密码">
+                    <input type="button" value="登录">
+
+                    <div class="operation">
+                        <a href="#" target="_blank">忘记密码</a>
+                        <a href="#" target="_blank">注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <a href="#">极速体验</a>
+                <a href="#">优采保障</a>
+                <a href="#">售后无忧</a>
+                <a href="#">专属客服</a>
+            </div>
+        </div>
     </div>
 
+    <!-- 热门采购 -->
+    <div class="popular">
+        <div class="popular_title">
+            <h3>热门采购</h3>
+            <div><a href="#">换一换</a></div>
+        </div>
+
+        <div class="popular_content"></div>
+    </div>
 
 </body>
 
