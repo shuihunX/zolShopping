@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品上传</title>
+    <script src="../js/jQuery-1.11.js"></script>
+</head>
+
+<body></body>
+
+<!-- 【15 添加商品接口】 -->
+<script>
+    $(function() {
+        /*    $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
+                pimg: "../image/catgegory_content1.png",
+                pname: "联想LJ2268",
+                pdesc: "办公设备/办公耗材——1，联想LJ2268",
+                pprice: 789.00,
+                uid: 44104
+            }, data => {
+                console.log(data);
+            })
+            $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
+                pimg: "../image/catgegory_content2.png",
+                pname: "爱普生L805",
+                pdesc: "办公设备/办公耗材——2，爱普生L805",
+                pprice: 2149.00,
+                uid: 44104
+            }, data => {
+                console.log(data);
+            })
+            $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
+                pimg: "../image/catgegory_content3.png",
+                pname: "微鲸F1 PLUS",
+                pdesc: "办公设备/办公耗材——3，微鲸F1 PLUS",
+                pprice: 1999.00,
+                uid: 44104
+            }, data => {
+                console.log(data);
+            })
+            $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
+                pimg: "../image/catgegory_content4.png",
+                pname: "兄弟T510W",
+                pdesc: "办公设备/办公耗材——4，兄弟T510W",
+                pprice: 1299.00,
+                uid: 44104
+            }, data => {
+                console.log(data);
+            })
+                */
+
+        /* 
+        345574
+        345575
+        345576
+        345577
+        */
+
+    })
+</script>
+
+<!-- 【14 首页商品列表接口，根据用户ID展示 用户传入的数据】 -->
+<script>
+    $(function() {
+        $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
+            uid: 44104
+        }, data => {
+            console.log(data)
+        })
+    })
+</script>
+
+<!-- 【17 删除商品接口】 -->
+<script>
+    $(function() {
+        $.get("http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php", {
+            pid: 345566,
+            uid: 44104,
+            token: "cdcd402eeab10f808b9f7d8d4b1b0109"
+        }, data => {
+            console.log(data)
+        })
+    })
+</script>
+
+</body>
+
+</html>

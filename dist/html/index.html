@@ -7,12 +7,16 @@
     <title>政府采购_企业采购_办公设备采购_电脑办公采购_政企采购平台-中关村在线企业购</title>
     <script src="../js/jQuery-1.11.js"></script>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
-    <script src="https://www.swiper.com.cn/package/swiper-bundle.min.js" async></script>
-
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js " async></script>
+    <script src="../js/index.js "></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+
 </head>
 
 <body>
@@ -88,6 +92,7 @@
             <ul>
                 <li>
                     <span>笔记本 / 超极本 / 台式电脑</span>
+
                 </li>
                 <li>
                     <span>办公打印 / 投影 / 监控 / 软件</span>
@@ -163,6 +168,27 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+
+
+
         <!-- 会员登录 -->
         <div class="huiyuan_login">
             <div class="login">
@@ -266,7 +292,8 @@
             </div>
 
             <ul class="proList">
-                <li class="proList_li">
+
+                <!--     <li class="proList_li">
                     <a href="#">
                         <div class="proImg"><img src="../image/catgegory_content1.png" alt=""></div>
                         <p class="proName">联想LJ2268</p>
@@ -321,7 +348,8 @@
                         <p class="proName">兄弟TN-3395</p>
                         <p class="price">￥989.00</p>
                     </a>
-                </li>
+                </li> -->
+
             </ul>
 
         </div>
