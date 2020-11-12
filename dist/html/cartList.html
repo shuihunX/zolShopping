@@ -5,10 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车列表</title>
+    <script src="../js/jQuery-1.11.js"></script>
+
+    <link rel="stylesheet" href="../css/cartList.css">
+    <script src="../js/cartList.js"></script>
 </head>
 
 <body>
+    <section id="sections">
+        <!-- cart -->
+        <div class="cart-head">
+            <div class="checked-btn">
+                <input type="checkbox" name="" id="checked-all-btn"> 全选
+            </div>
+            <div class="message">
+                商品信息
+            </div>
+            <ul class="oUl">
+                <li>单价</li>
+                <li>数量</li>
+                <li>金额</li>
+                <li>操作</li>
+            </ul>
+        </div>
+    </section>
+    <section id="section">
+    </section>
+    <!-- 总和 -->
+    <div id="end">
+        <button id="sumBtn">亲，有钱吗？</button>
+        <span id="null"></span>
+        <span>元</span>
 
+        <span id="sum">0</span>
+        <span>您需要支付：</span>
+    </div>
 </body>
 
 </html>
